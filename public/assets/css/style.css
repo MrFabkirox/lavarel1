@@ -1,0 +1,12 @@
+p
+	{
+		color: blue;
+	}
+
+body
+	{
+		/*background-image: url({{ URL::asset('assets/img/graph.png'); }})    not working */
+		background-image: url("assets/img/graph.png");
+		{{ HTML::image('assets/img/graph.png', 'graph', array('id' => 'idkirox')); }}
+		
+	}

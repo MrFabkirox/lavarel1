@@ -17,3 +17,5 @@ Route::get('/', function()
 });
 
 Route::get('/p2', "HomeController@showP2");
+
+Route::get('/p3', "HomeController@showP3");

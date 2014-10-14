@@ -24,5 +24,9 @@ class HomeController extends BaseController {
 	{
 		return View::make('page2');
 	}
+	public function showP3()
+	{
+		return View::make('page3');
+	}
 
 }

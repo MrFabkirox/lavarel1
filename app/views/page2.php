@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Laravel PHP Framework</title>
+
 		<style>
 			@import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -16,6 +17,17 @@
 		</style>
 	</head>
 	<body>
+		
+		<form action="http://localhost:8000/" type="GET">
+		<button type="input"> p1 </button>
+	</form>
+	<form action="http://localhost:8000/p2" type="GET">
+		<button type="input"> p2 </button>
+	</form>
+	<form action="http://localhost:8000/p3" type="GET">
+		<button type="input"> p3 </button>
+	</form>
+
 			<h1>Page 2</h1>
 
 				<p>
