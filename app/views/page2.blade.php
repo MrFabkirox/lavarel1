@@ -2,6 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<script src="assets/js/functions.js"></script>
 		<title>Laravel PHP Framework</title>
 
 		<style>
@@ -18,15 +19,10 @@
 	</head>
 	<body>
 		
-		<form action="http://localhost:8000/" type="GET">
-		<button type="input"> p1 </button>
-	</form>
-	<form action="http://localhost:8000/p2" type="GET">
-		<button type="input"> p2 </button>
-	</form>
-	<form action="http://localhost:8000/p3" type="GET">
-		<button type="input"> p3 </button>
-	</form>
+		@extends('menu')
+		@section('content')
+		<html stuff>
+		@stop
 
 			<h1>Page 2</h1>
 
@@ -83,6 +79,20 @@
 					</tr>
 
 				</table>
+
+				<button type="button" onclick="Javascript:alert('alert')">alert js</button>
+
+				<p id="demo">
+					paragraph
+				</p>
+				<button type="button" onclick="resetJs()">reset Js</button>
+				<button type="button" onclick="writeStuff()">write Js</button>
+
+
+				<script type="text/javascript">function writeStuff() {
+					document.getElementById("demo").innerHTML = "write stuff !";
+					}
+				</script>
 
 	</body>
 	</html>

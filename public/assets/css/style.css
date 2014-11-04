@@ -10,3 +10,38 @@ body
 		{{ HTML::image('assets/img/graph.png', 'graph', array('id' => 'idkirox')); }}
 		
 	}
+
+	/* Menu */
+#menu-vertical, #menu-vertical ul {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 180px;
+}
+
+#menu-vertical li {
+	position: relative;
+	background: #EFEFEF;
+}
+
+#menu-vertical a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+#menu-vertical ul {
+	position: absolute;
+	left: -999em;
+}
+
+#menu-vertical li:hover ul{
+	top: 0;
+	left: 180px;
+}
+
+#menu-bas {
+	position: relative;
+	bottom: 1px;
+}
